@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Video Guide Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  
+</head>
+<body>
+<div id="slider">
+	<div id="image-Slider">
+		
+	</div>
+	<div id="slide-control">
+		<a href="#" id="prev" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		<a href="#" id="next" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>		
+	</div>
+</div>
+<script src="js/lib.js"></script>
+<script>
+var sliderData = [{
+		name:"Slide 1",
+		linkUrl:"http://www.google.com",
+		imageUrl:"images/image1.png"
+	},
+	{
+		name:"Slide 2",
+		linkUrl:"http://www.yahoo.com",
+		imageUrl:"images/image2.png"
+	},
+	{
+		name:"Slide 3",
+		linkUrl:"http://www.amazon.com",
+		imageUrl:"images/image3.png"
+	},
+	{
+		name:"Slide 4",
+		linkUrl:"http://www.w3schools.com",
+		imageUrl:"images/image4.png"
+	},
+	{
+		name:"Slide 5",
+		linkUrl:"http://www.google.com",
+		imageUrl:"images/image5.png"
+	}];
+	
+
+$.fn.slider(sliderData);
+</script>
+</body>
+</html>
